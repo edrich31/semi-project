@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    direction: rtl;
+    text-align: right;
+    
+}
+
+header{
+    width: 100vw;
+    height: 72px;
+    background: rgb(141, 141, 141);
+    
+}
+
+nav{
+    width: 100vw;
+    background: linear-gradient(360deg, hsla(0, 0%, 67%, 1) 0%, hsla(0, 0%, 56%, 1) 40%);
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    display: fix; 
+    width: 100vw; 
+    background: linear-gradient(360deg, hsla(0, 0%, 56%, 1) 75%, hsla(0, 0%, 70%, 1) 100%);
+    position: fixed;
+    height: 38px;
+    bottom:0;
+
+}
+
+#fc{
+    height: 17px;
+    width: 17px;
+    border:1px white solid;
+    border-radius: 10%;
+}
+
+.decoration{
+    list-style-type: none;
+    color: white;
+    
+        
+}
+
+.list>.decoration:nth-child(even){
+    margin: 0 5px; 
+}
+
+
+
+.decoration>a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#bottom-links{
+    margin-top: 16.333px;
+    position:relative;
+    
+}
+
+#bottom-links>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+.top-container{
+    display: flex;
+}
+
+.top-container>.list{
+    display: flex;
+}
+
+
+
+div[class$="-container"]{
+    position: relative;
+    
+}
+
+.list-type{
+    list-style-type: none;
+    background: rgb(144, 144, 144);
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    
+}
+
+.list-type>li>a{
+    color:white;
+    text-decoration: none;
+}
