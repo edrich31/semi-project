@@ -10,15 +10,19 @@ body{
     
 }
 
+main{
+    position: relative;
+}
+
 header{
-    width: 100vw;
     height: 72px;
     background: rgb(141, 141, 141);
+    
+    
     
 }
 
 nav{
-    width: 100vw;
     background: linear-gradient(360deg, hsla(0, 0%, 67%, 1) 0%, hsla(0, 0%, 56%, 1) 40%);
     height: 33px;
     display: flex;
@@ -42,9 +46,28 @@ footer{
     border-radius: 10%;
 }
 
+main>.flex-top-container{
+    display: flex;
+    flex-grow:10;   
+}
+.flex-top-left{
+    flex:23.1985;
+    background: linear-gradient(360deg, hsla(0, 0%, 67%, 1) 0%, hsla(0, 0%, 56%, 1) 15%);
+}
+.flex-top-center{
+    flex:53.603;
+}
+.flex-top-right{
+    flex:23.1985;
+    background: linear-gradient(360deg, hsla(0, 0%, 67%, 1) 0%, hsla(0, 0%, 56%, 1) 15%);
+
+}
+
+
 .decoration{
     list-style-type: none;
     color: white;
+    
     
         
 }
@@ -92,6 +115,9 @@ div[class$="-container"]{
     position: relative;
     
 }
+div[class~="-container"]:first-child{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .list-type{
     list-style-type: none;
@@ -102,7 +128,33 @@ div[class$="-container"]{
     
 }
 
+
+
 .list-type>li>a{
     color:white;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#paz-tag{
+    display: block;
+    width: 142px;
+    height: 93px;
+    
+    bottom: 10px;
+    right:61.3333px;
+    z-index: 9999;
+}
+
+ul[class~="list-type"]{
+    display: none;
+}
+
+div[class$="-container decoration"]:hover > ul[class~="list-type"]{
+    display: block;
+}
+div[class$="-container decoration"]:hover>.blue{
+    color:rgb(0,92,160);
+    text-decoration: underline;
+    
 }
